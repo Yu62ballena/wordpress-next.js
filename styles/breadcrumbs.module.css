@@ -1,0 +1,11 @@
+.cursor {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--gray-50);
+}
+
+.breadcrumbs {
+    font-size: calc(var(--small-heading5) * 0.8);
+    color: var(--gray-50);
+    margin-left: 200px;
+}

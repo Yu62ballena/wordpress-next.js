@@ -1,0 +1,36 @@
+.relative {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: #a6d6ff;
+  margin-bottom: 80px;
+
+}
+
+.absoluteBox {
+  width: calc(100% - 60px);
+  margin: auto;
+  height: calc(100% - 60px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white);
+}
+
+.descriptions {
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.descriptions p {
+  text-align: center;
+}

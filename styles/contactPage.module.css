@@ -1,0 +1,54 @@
+.form div {
+    margin-bottom: 40px;
+    line-height: 1.1;
+    font-size: var(--small-heading5);
+}
+
+.form input {
+    width: 50%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: var(--small-heading5);
+}
+
+.form textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    height: 300px;
+    border-radius: 6px;
+    font-size: var(--small-heading5);
+}
+.form button {
+    width: 500px;
+    display: block;
+    margin: 50px auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: opacity 0.3s;
+    font-size: var(--small-heading5);
+}
+
+.form button:hover {
+    opacity: 0.7;
+}
+
+.form input:focus, .form textarea:focus {
+    outline: none;
+}
+
+.errorMsg {
+    color: red;
+    margin-top: 5px;
+}
+
+.msgOK {
+    color: var(--accent);
+}
+
+.msgOK p {
+    text-align: center;
+    margin-bottom: 8px;
+}

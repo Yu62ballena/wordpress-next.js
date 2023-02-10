@@ -1,0 +1,33 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-jump);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-lg);
+}
+
+.gridContainer3Cloumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-jump);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-xxs);
+}
+
+.post h2 {
+    margin-top: 0.5em;
+    font-size: var(--small-heading3);
+    font-weight: 400;
+}
+
+.post figure {
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.image {
+    z-index: -10;
+}
+
+
+

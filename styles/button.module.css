@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--gray-50);
+  color: var(--white);
+  padding: 10px 20px;
+  font-size: var(--small-heading5);
+  margin: var(--space-xxs) 0 var(--space-xl);
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+
+.center{
+  text-align: center;
+}

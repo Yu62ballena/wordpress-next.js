@@ -1,0 +1,7 @@
+.flexContainer {
+    composes: spaceBetween from 'styles/utils.module.css';
+    justify-content: flex-start;
+    gap: 1em;
+    color: var(--gray-50);
+    font-size: calc(var(--small-heading5) * 0.9);
+}

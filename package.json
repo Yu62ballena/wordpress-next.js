@@ -1,0 +1,41 @@
+{
+  "name": "api-review-by-book",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@sendgrid/mail": "^7.7.0",
+    "bootstrap": "^5.2.3",
+    "cheerio": "^1.0.0-rc.12",
+    "date-fns": "^2.29.3",
+    "firebase-admin": "^11.3.0",
+    "framer-motion": "^9.0.1",
+    "html-react-parser": "^3.0.4",
+    "html-to-text": "^8.2.1",
+    "microcms-js-sdk": "^2.3.0",
+    "next": "13.0.1",
+    "nodemailer": "^6.8.0",
+    "plaiceholder": "^2.5.0",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.41.5",
+    "react-scroll": "^1.8.9",
+    "sharp": "^0.31.2",
+    "tocbot": "^4.19.0"
+  },
+  "devDependencies": {
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.1"
+  }
+}

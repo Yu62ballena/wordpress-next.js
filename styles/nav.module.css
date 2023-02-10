@@ -1,0 +1,54 @@
+
+
+@media (hover: hover){
+    .anchor:hover {
+        color: var(--accent);
+    }
+}
+
+@media (hover: none){
+    .anchor div:hover {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .anchor:active {
+        color: var(--accent);
+    }
+}
+
+
+@media(min-width: 768px){
+    .btn {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        align-items: baseline;
+        gap: 2em;
+        margin-left: var(--space-xxxs);
+    }
+    .anchor div {
+        text-align: center;
+        font-size: var(--small-heading3);
+        align-items: baseline;
+    }
+
+    .anchor div p:nth-child(2) {
+        font-size: calc(var(--small-heading5) * 0.7);
+        margin-top: calc(var(--space-xxxs) * 0.3);
+        /* color: var(--gray-50); */
+    }
+}
+
+@media (max-width: 767px) {
+    .btn {
+        display: none;
+    }
+    .list {
+        display: none;
+    }
+
+    
+}
+

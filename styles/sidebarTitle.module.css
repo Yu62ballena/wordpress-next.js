@@ -1,0 +1,10 @@
+.title {
+    background-color: var(--gray-75);
+    text-align: left;
+    padding: 8px 0;
+}
+
+.title span {
+    color: var(--white);
+    margin-left: 10px;
+}

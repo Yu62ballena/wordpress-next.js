@@ -1,0 +1,274 @@
+.stack > * + * {
+    margin-top: var(--stack-space, 1em);
+}
+
+.stack h2,
+.stack h3 {
+    --stack-space: 2em;
+    background-color: var(--black);
+    color: var(--white);
+    padding: var(--space-xxxs) var(--space-xxs);
+}
+
+.stack p {
+    line-height: 1.5;
+    font-size: calc(var(--blog-p) *1.1);
+}
+
+.stack ul {
+    padding: revert;
+    list-style: revert;
+}
+
+.stack img {
+    box-shadow: 10px 10px 32px -8px #777777;
+}
+
+
+/* 目次 */
+.stack :global #toc_container {
+    border: 1px solid var(--gray-50);
+    padding: 10px;
+    width: auto;
+    display: table;
+    font-size: 95%;
+    /* 中央よせの場合、下のmarginを有効に */
+    /* margin: 0 auto 1em; */
+}
+
+.stack :global #toc_container p {
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.stack :global #toc_container ul {
+    /* margin-top: 1em; */
+    list-style: none;
+    padding: 5px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.stack :global #toc_container li {
+    line-height: 1.5;
+}
+
+.stack :global #toc_container li a {
+    color: var(--accent);
+}
+
+
+/* オレンジ枠 */
+/* 全体のwrapper */
+.stack :global .sc_frame_wrap {
+    margin-bottom: 1.2em;
+    position: relative;
+}
+
+/* 枠の題名部分 */
+.stack :global .sc_frame_wrap.orange .sc_frame_title {
+    color: #fff;
+    background-color: #ffa30d;
+    border-radius: 5px 5px 0 0;
+    padding: 0.25em 1em 0.2em;
+    font-size: .9em;
+    position: relative;
+    font-weight: bold;
+    top: 1px;
+}
+
+/* テキスト部分を囲むdivの周辺余白部分 */
+.stack :global .sc_frame_wrap.orange .sc_frame {
+
+    border-radius: 0px 0px 5px 5px;
+    overflow: auto;
+    border: 3px solid rgb(204, 204, 204);
+    border-color: rgb(255, 163, 13);
+    padding: 1em 1.5em;
+    position: relative;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+
+/* テキスト部分を囲むdiv */
+.stack :global .sc_designlist ol{
+    list-style: none;
+    counter-reset: number 0;
+    line-height: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 1個1個のテキスト */
+.stack :global .sc_designlist ol li {
+    position: relative;
+    margin-bottom: 0.3em;
+    padding-left: 2.5em;
+    display: list-item;
+}
+
+/* テキスト左の番号 */
+.stack :global .sc_designlist ol li::after {
+    color: rgb(255, 163, 13);
+    border-color: rgb(255, 163, 13);
+    border-radius: 50%;
+    position: absolute;
+    counter-increment: number 1;
+    content: counter(number);
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9em;
+    left: 0px;
+    top: 0.2em;
+    width: 1.8em;
+    line-height: 1.8em;
+    text-align: center;
+    white-space: nowrap;
+    box-sizing: content-box;
+    border: 2px solid rgb(255, 163, 13);
+}
+
+
+/* コード表示 */
+.stack :global .line-numbers {
+    border: 2px solid var(--gray-75);
+    color: var(--white);
+    background-color: var(--gray-75);
+    padding: 10px;
+    margin: 15px 0;
+}
+
+
+/* 本文、下線部マーカー */
+/* .stack :global .sc_marker {
+    background: linear-gradient(transparent 50%, #ffff66 50%);
+} */
+
+.stack :global .sc_marker {
+    box-shadow: 0px -6px 5px -3px rgba(243, 254, 33, 0.8) inset,0px 7px 5px -8px #f7c668;
+    font-weight: bold;
+  }
+
+
+/* 以下、コード表示に挑戦中 */
+/* .stack :global pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+    padding-left: 0;
+}
+
+.stack :global pre[class*="language-"] {
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    margin: 0.5em 0;
+    overflow: visible;
+    padding: 0;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+}
+
+.stack :global code[class*="language"]{
+    max-height: inherit;
+    height: inherit;
+    padding: 0 1em;
+    display: block;
+    overflow: auto;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+}
+
+.stack :global pre[class*="language-"]>code {
+    position: relative;
+    border-left: 10px solid #358ccb;
+    box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+    background-color: #fdfdfd;
+    background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+    background-size: 3em 3em;
+    background-origin: content-box;
+    background-attachment: local;
+}
+
+.stack :global pre[class*="language-"].line-numbers.line-numbers code {
+    padding-left: 3.8em;
+}
+
+.stack :global pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.stack :global span {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 100%;
+    font-style: normal;
+}
+
+.stack :global .token.tag {
+    color: #905;
+}
+
+.stack :global .token.punctuation {
+    color: #5f5f5f;
+}
+
+.stack :global .token.attr-name {
+    color: #407b08;
+}
+
+.stack :global .token.attr-value {
+    color: #07a;
+}
+
+.stack :global .line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    user-select: none;
+}
+
+.stack :global pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
+    left: 0;
+}
+
+.stack :global .line-numbers-rows > span:before {
+    counter-increment: linenumber 1;
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+.stack :global .language-markup > span {
+    display: block;
+}
+ */
+
+ /* コード表示に挑戦中、ここまで */

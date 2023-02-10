@@ -1,0 +1,6 @@
+.list {
+    display: flex;
+    gap: 1.5em;
+    font-size: var(--iconSize, 24px);
+    margin: 0 auto;
+}
